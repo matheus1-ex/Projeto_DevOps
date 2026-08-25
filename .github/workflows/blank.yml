@@ -21,7 +21,7 @@ jobs:
     # Verificar o CSS (Stylelint)
       - name: Verificar CSS
         run: |
-          npx stylelint "**/*.css"
+          npx --check stylelint "**/*.css"
 
       # Verificar o HTML (HtmlHint)
       - name: Verificar HTML
