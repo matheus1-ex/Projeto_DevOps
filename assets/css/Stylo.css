@@ -5,7 +5,9 @@
 
 body {
   flex-direction: column;
-  gap: 2px;
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
 }
 
 section {
@@ -37,14 +39,46 @@ h2 {
 }
 
 .cardPrincipal {
-  display: flexbox;
-  justify-self: center;
+  display: grid;
+  grid-template-rows: repeat(2, 1.5fr);
+  grid-column:unset;
+  align-self: center;
   width: 80vw;
   height: 70vh;
   background-color: aqua;
 }
 
-footer {
+.cardEsquerdo01 {
+  flex: 1;
+  width: 35vw;
+  height: 30vh;
+  border-radius: 30px 30px 30px 30px;
+  background-color: black;
 
+}
+
+.cardEsquerdo02 {
+  flex: 1;
+  right: 210px;
+  top: 30vh;
+  width: 35vw;
+  height: 40vh;
+  border-radius: 30px 30px 30px 30px;
+  background-color: rgb(241, 0, 0);
+
+}
+
+.cardDireito01 {
+  flex: 1;
+  right: 8px;
+  width: 35vw;
+  height: 30vh;
+  border-radius: 30px 30px 30px 30px;
+  background-color: rgb(55, 222, 0);
+
+}
+
+footer {
+  margin-top: auto;
   background-color: blue;
 }
