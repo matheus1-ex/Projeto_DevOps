@@ -18,12 +18,12 @@ jobs:
       - name: Baixar o repositório
         uses: actions/checkout@v7
 
+    # Verificar o CSS (Stylelint)
+      - name: Verificar CSS
+        run: |
+          npx stylelint "**/*.css"
+
       # Verificar o HTML (HtmlHint)
       - name: Verificar HTML
         run: |
           npx htmlhint "**/*.html"
-
-      # Agora é verificar o CSS (Stylelint)
-      - name: Verificar CSS
-        run: |
-          npx stylelint "**/*.css"
