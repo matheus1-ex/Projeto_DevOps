@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "stylelint": "^17.14.1"
+    "stylelint": "^16.0.0",
+    "htmlhint": "^1.1.1"
   }
 }
