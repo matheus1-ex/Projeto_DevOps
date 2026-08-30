@@ -18,6 +18,10 @@ jobs:
       - name: Baixar o repositório
         uses: actions/checkout@v7
 
+      # Instalar Dependências
+      - name: Instalar Dependencias
+        run: npx install
+
     # Verificar o CSS (Stylelint)
       - name: Verificar CSS
         run: |
