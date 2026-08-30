@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "stylelint": "^16.0.0",
-    "stylelint-config-standard": "^34.0.0",
-    "htmlhint": "^1.1.1"
+    "stylelint": "^latest",
+    "stylelint-config-standard": "^latest",
+    "htmlhint": "^latest"
   }
 }
