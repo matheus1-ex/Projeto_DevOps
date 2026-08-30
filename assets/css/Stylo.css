@@ -1,7 +1,7 @@
 * {
-  font-family: 'Montserrat', sans-serif;
-  padding: 0px;
-  margin: 0px;
+  font-family: Montserrat, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -13,10 +13,9 @@ body {
 
 section {
   display: flex;
-  justify-content: center;
   place-content: center;
   align-items: center;
-  background: linear-gradient(180deg, rgb(13, 64, 84) 34%, rgba(10, 10, 10, 0%) 100%);
+  background: rgba(5, 37, 141, 0.748);
   height: 12vh;
 }
 
@@ -29,14 +28,14 @@ section img {
 }
 
 h2 {
-  color: rgb(rgb(205, 55, 55), rgb(98, 242, 98), rgb(81, 81, 190));
+  color: rgb(16, 7, 97);
   display: flex;
   justify-content: center;
   font-size: 17px;
   
 }
 
-.card-Principal {
+.card-principal {
   display: grid;
   overflow: hidden;
   grid-template-rows: repeat(2, 1.5fr);
@@ -47,7 +46,7 @@ h2 {
   background-color: aqua;
 }
 
-.card-Esquerdo01 {
+.card-esquerdo-01 {
   flex: 1;
   width: 35vw;
   height: 30vh;
@@ -56,7 +55,7 @@ h2 {
 
 }
 
-.card-Esquerdo02 {
+.card-esquerdo-02 {
   flex: 1;
   right: 210px;
   top: 30vh;
@@ -67,7 +66,7 @@ h2 {
 
 }
 
-.card-Direito01 {
+.card-direito-01 {
   flex: 1;
   right: 8px;
   width: 35vw;
@@ -81,8 +80,7 @@ footer {
   color: white;
   height: 20px;
   text-align: center;
-  justify-content: center;
-  align-content: center;
+  place-content: center;
   align-items: center;
   font-size: 12px;
   margin-top: auto;
