@@ -1,4 +1,5 @@
 * {
+  font-family: 'Montserrat', sans-serif;
   padding: 0px;
   margin: 0px;
 }
@@ -13,10 +14,9 @@ body {
 section {
   display: flex;
   justify-content: center;
-  align-content: center;
-  align-itens: center;
-  background: #0f516b37;
-  background: linear-gradient(180deg, rgb(13, 64, 84) 34%, rgba(10, 10, 10, 0) 100%);
+  place-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgb(13, 64, 84) 34%, rgba(10, 10, 10, 0%) 100%);
   height: 12vh;
 }
 
@@ -25,21 +25,20 @@ section img {
   width: 120px;
   height: 60px;
   justify-content: center;
-  align-content: center;
-  align-itens: center;
+  align-items: center;
 }
 
 h2 {
-  font-family: "Montserrat" sans-serif;
-  color: rgba(14,47,102,0.863);
+  color: rgb(rgb(205, 55, 55), rgb(98, 242, 98), rgb(81, 81, 190));
   display: flex;
   justify-content: center;
   font-size: 17px;
   
 }
 
-.cardPrincipal {
+.card-Principal {
   display: grid;
+  overflow: hidden;
   grid-template-rows: repeat(2, 1.5fr);
   grid-column:unset;
   align-self: center;
@@ -48,37 +47,44 @@ h2 {
   background-color: aqua;
 }
 
-.cardEsquerdo01 {
+.card-Esquerdo01 {
   flex: 1;
   width: 35vw;
   height: 30vh;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
   background-color: black;
 
 }
 
-.cardEsquerdo02 {
+.card-Esquerdo02 {
   flex: 1;
   right: 210px;
   top: 30vh;
   width: 35vw;
   height: 40vh;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
   background-color: rgb(241, 0, 0);
 
 }
 
-.cardDireito01 {
+.card-Direito01 {
   flex: 1;
   right: 8px;
   width: 35vw;
   height: 30vh;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
   background-color: rgb(55, 222, 0);
 
 }
 
 footer {
+  color: white;
+  height: 20px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 12px;
   margin-top: auto;
   background-color: blue;
 }
