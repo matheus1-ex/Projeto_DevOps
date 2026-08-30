@@ -1,7 +1,6 @@
 {
-  "devDependencies": {
-    "stylelint": "^latest",
-    "stylelint-config-standard": "^latest",
-    "htmlhint": "^latest"
-  }
+  "scripts": {
+  "lint:html": "htmlhint \"**/*.html\"",
+  "lint:css": "stylelint \"**/*.css\""
+}
 }

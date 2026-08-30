@@ -12,28 +12,27 @@ jobs:
   build:
     # Rodar por comando
     runs-on: ubuntu-latest
-
+    
     steps:
-      # Baixar o repositório
-      - name: Baixar o repositório
-        uses: actions/checkout@v7
-
-      # Configurar o Node.js + Instalação
-      - name: Setup Node.js
+      # Checar o código
+      - name: Checkout no código
+        uses: actions/checkout@v4
+      
+      # Configurar o Node.js
+      - name: Configurar o Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
+      
+      # Instalar Dependências para evitar erros
+      - name: Instalar dependências
+        run: npm ci
 
-      # Deependências do Stylelint
-      - name: Instalar Dependências do stylelint
-        run: npm install stylelint
-        
-    # Verificar o CSS (Stylelint)
-      - name: Verificar CSS
-        run: |
-          npx stylelint "**/*.css"
+      # Validação do HTML
+      - name: Validar html
+        run: npm run lint:html
 
-      # Verificar o HTML (HtmlHint)
-      - name: Verificar + Validar o Html
-        run: |
-          npm install -g html-validator-cli && html-validator --file "**/*.html"
+      
+      # Validação do CSS
+      - name: Validar Css
+        run: npm run lint:css

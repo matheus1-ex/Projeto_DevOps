@@ -1,7 +1,3 @@
 {
-    "extends": "stylelint-config-standard",
-    "rules": {
-    "indentation": 2,
-    "max-line-length": 100
-  }
+  "extends": "stylelint-config-standard"
 }
