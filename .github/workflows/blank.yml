@@ -24,7 +24,10 @@ jobs:
         with:
           node-version: '18'
 
-
+      # Deependências do Stylelint
+      - name: Instalar Dependências do stylelint
+        run: npm install stylelint
+        
     # Verificar o CSS (Stylelint)
       - name: Verificar CSS
         run: |
