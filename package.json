@@ -2,5 +2,9 @@
   "scripts": {
   "lint:html": "htmlhint \"**/*.html\"",
   "lint:css": "stylelint \"**/*.css\""
-}
+},
+  "devDependencies": {
+    "stylelint": "17.14.1",
+    "htmlhint": "1.9.2"
+  }
 }
