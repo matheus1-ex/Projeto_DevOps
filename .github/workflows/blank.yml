@@ -20,7 +20,7 @@ jobs:
 
       # Instalar Dependências
       - name: Instalar Dependencias
-        run: npx install
+        run: npm install
 
     # Verificar o CSS (Stylelint)
       - name: Verificar CSS
