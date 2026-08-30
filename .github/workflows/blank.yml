@@ -18,6 +18,12 @@ jobs:
       - name: Baixar o repositório
         uses: actions/checkout@v7
 
+      # Configurar o Node.js + Instalação
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       # Instalar Dependências
       - name: Instalar Dependencias
         run: npm install
@@ -25,11 +31,9 @@ jobs:
     # Verificar o CSS (Stylelint)
       - name: Verificar CSS
         run: |
-          npm install -D stylelint 
           npx stylelint "**/*.css"
 
       # Verificar o HTML (HtmlHint)
-      - name: Verificar HTML
+      - name: Verificar + Validar o Html
         run: |
-          npm install -D htmlhint
-          npx htmlhint "**/*.html"
+          npm install -g html-validator-cli && html-validator --file "**/*.html"
