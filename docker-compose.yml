@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  orizon-bio:
+    build: .
+    container_name: biosite_orizon
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./html:/app:ro
+    restart: always
