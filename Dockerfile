@@ -3,7 +3,7 @@ FROM python:3.11-alpine
 WORKDIR /app
 
 # Copia os arquivos estáticos para o diretório do trabalho
-COPY ./html/app
+COPY ./ html/app/
 
 EXPOSE 8000
 
