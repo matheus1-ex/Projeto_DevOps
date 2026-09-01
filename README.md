@@ -24,7 +24,7 @@ A documentação está estruturada em 4 páginas:
 * 🏠 **[1. Início](../../wiki/1.-In%C3%ADcio)**
   * Visão geral do projeto, stack de tecnologias e destaques da infraestrutura.
 
-* 🗺️ **[2. Arquitetura e Mapeamento de Caminhos](../../wiki/2.-Arquitetura-e-Mapeamento-de-Caminhos)**
+* 🗺️ **[2. Arquitetura e Mapeamento de Caminhos](../../wiki/2.-Arquitetura-e-Caminhos-do-Projeto)**
   * Árvore de diretórios completa do repositório.
   * Explicação detalhada da função de cada arquivo e pasta.
 
