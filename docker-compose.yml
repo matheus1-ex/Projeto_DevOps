@@ -1,11 +1,11 @@
-version: '3.8'
 
 services:
   orizon-bio:
+    image: nginx:alpine
     build: .
     container_name: biosite_orizon
     ports:
-      - "8000:8000"
+      - "8000:80"
     volumes:
-      - ./html:/app:ro
+      - .:/usr/share/nginx/html
     restart: always
